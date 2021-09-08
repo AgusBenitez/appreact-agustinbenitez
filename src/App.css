@@ -18,26 +18,53 @@ body {
 .header nav {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
-.header nav ul {
-  display: flex;
-  column-gap: 5rem;
-  list-style: none;
-}
-
-.header nav ul a {
-  
-  padding: 0.5rem;
+.header nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
-#btn-carrito {
-  border: 2px white solid;
+.cartWidget img {
+  height: 40px;
+}
+
+.itemsContainer {
+  width: 70%;
+  margin: 30px auto;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 6.6%;
+  row-gap: 30px;
+}
+
+.itemsContainerCard {
+  width: 20%;
+  height: 500px;
+  border: 1px #8080804f solid;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.itemsContainerCard:hover {
+  box-shadow: 2px 2px rgba(128, 128, 128, 0.5);
+}
+
+.itemsContainerCard img {
+  height: 50%;
+  padding: 1rem;
+}
+
+.agregarCarrito  {
+  padding: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #11B5E4;
+  color: white;
   border-radius: 2rem;
-  background-color: #000000;
-  }
+}
