@@ -1,0 +1,35 @@
+.countSection {
+    border-radius: 2rem;
+    padding: 0.2rem;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.countSection span {
+    padding: 0.2rem;
+}
+
+.btnCount {
+    border: 2px solid;
+    border-color: #8080804f;
+    padding: 0.2rem;
+    border-radius: 2rem;    
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: border-color 300ms ease-in;  
+}
+
+.btnCount:hover {
+    border-color: rgba(128, 128, 128, 0.705);
+}
+
+.outStock {
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.705);
+    color: white;
+    border-radius: 2rem;
+}
