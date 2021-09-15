@@ -1,0 +1,14 @@
+.cargandoText {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    animation-duration: 1s;
+    animation-name: cargando;
+    animation-iteration-count: infinite;  
+}
+
+@keyframes cargando {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
