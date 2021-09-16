@@ -1,27 +1,33 @@
 .itemsContainerCard {
     width: 20%;
     height: 500px;
-    border: 1px #8080804f solid;  
+    border: 1px #8080804f solid;
+    text-decoration: none;
+    color: black;
+}
+
+.itemsContainerCard > div {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-  }
-  
-  .itemsContainerCard:hover {
-    box-shadow: 2px 2px rgba(128, 128, 128, 0.5);
-  }
-  
-  .itemsContainerCard img {
+}
+
+.itemsContainerCardImg {
     height: 50%;
     padding: 1rem;
-  }
-  
-  .agregarCarrito, .verOtros {
+}
+
+.itemsContainerCard:hover {
+    box-shadow: 2px 2px rgba(128, 128, 128, 0.5);
+}
+
+.agregarCarrito, .verOtros {
     padding: 0.5rem;
     text-decoration: none;
     font-weight: bold;
     background-color: #11B5E4;
     color: white;
     border-radius: 2rem;
-  }
+} 
