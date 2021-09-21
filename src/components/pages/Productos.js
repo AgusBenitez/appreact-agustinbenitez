@@ -3,9 +3,7 @@ import ItemsContainer from '../ItemsContainer/ItemsContainer'
 
 const Productos = () => {
     return (
-        <>
-            <ItemsContainer />
-        </>
+        <ItemsContainer />
     )
 }
 

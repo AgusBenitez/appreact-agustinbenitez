@@ -1,7 +1,9 @@
-import React from 'react'
-import ItemDetails from '../ItemDetails/ItemDetails'
+import React from 'react';
+import ItemDetails from '../ItemDetails/ItemDetails';
+
 
 const DetalleProducto = () => {
+
     return (
         <ItemDetails />
     )
