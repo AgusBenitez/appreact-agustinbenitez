@@ -17,16 +17,86 @@
         {
             "id": 2,
             "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009054.jpg",
-            "titulo": "Samsung Galaxy A02",
+            "titulo": "Samsung Galaxy A02 32GB",
             "precio": 21999,
             "stock": 0
         },
         {
             "id": 3,
             "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009233.jpg",
-            "titulo": "Samsung Galaxy A12",
+            "titulo": "Samsung Galaxy A12 128GB",
             "precio": 34999,
             "stock": 15
+        },
+        {
+            "id": 4,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70009231.jpg",
+            "titulo": "Samsung Galaxy A22",
+            "precio": 41999,
+            "stock": 35
+        },
+        {
+            "id": 5,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008896.jpg",
+            "titulo": "Samsung Galaxy A02s",
+            "precio": 26999,
+            "stock": 25
+        },
+        {
+            "id": 6,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008890.jpg",
+            "titulo": "Samsung Galaxy A21s 128GB",
+            "precio": 35999,
+            "stock": 18
+        },
+        {
+            "id": 7,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008379.jpg",
+            "titulo": "Samsung Galaxy A31 128GB",
+            "precio": 39999,
+            "stock": 36
+        },
+        {
+            "id": 8,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70009272.jpg",
+            "titulo": "Samsung Galaxy S20 FE",
+            "precio": 84999,
+            "stock": 58
+        },
+        {
+            "id": 9,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008379.jpg",
+            "titulo": "Samsung Galaxy A01 Core",
+            "precio": 15999,
+            "stock": 153
+        },
+        {
+            "id": 10,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70009053.jpg",
+            "titulo": "Samsung Galaxy A32",
+            "precio": 44999,
+            "stock": 124
+        },
+        {
+            "id": 11,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008897.jpg",
+            "titulo": "Samsung Galaxy S21 Ultra",
+            "precio": 174999,
+            "stock": 36
+        },
+        {
+            "id": 12,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008899.jpg",
+            "titulo": "Samsung Galaxy S21 Plus",
+            "precio": 139999,
+            "stock": 58
+        },
+        {
+            "id": 13,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008885.jpg",
+            "titulo": "Samsung Galaxy S21",
+            "precio": 121999,
+            "stock": 76
         }
     ]
 }

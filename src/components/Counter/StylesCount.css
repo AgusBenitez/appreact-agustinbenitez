@@ -1,7 +1,7 @@
 .countSection {
     border-radius: 2rem;
     padding: 0.2rem;
-    width: 60%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
 }
