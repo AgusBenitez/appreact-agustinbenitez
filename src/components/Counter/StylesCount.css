@@ -28,6 +28,7 @@
 
 .outStock {
     font-weight: bold;
+    text-decoration: none;
     padding: 0.5rem;
     background-color: rgba(0, 0, 0, 0.705);
     color: white;

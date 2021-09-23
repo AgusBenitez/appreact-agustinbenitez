@@ -98,5 +98,19 @@
             "precio": 121999,
             "stock": 76
         }
+    ],
+    "categories": [
+        {
+            "id": 0,
+            "name": "Samsung"
+        },
+        {
+            "id": 1,
+            "name": "Motorola"
+        },
+        {
+            "id": 2,
+            "name": "Apple"
+        }
     ]
 }

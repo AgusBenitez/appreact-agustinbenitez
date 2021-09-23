@@ -5,6 +5,7 @@ const CartWidget = () => {
     return (
         <a className="cartWidget" href="#">
             <img src={carritoImg} alt="Carrito" />
+            <span>0</span>
         </a>
     )
 }

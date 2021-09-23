@@ -27,7 +27,7 @@ const ItemsContainerCard = (props) => {
                         <h4>{props.titulo}</h4>
                         <span>{`$${props.precio}`}</span>
                     </div>
-                    <a href="#" className="verOtros">Ver otros</a>
+                    <a href="#" className="outStock">Sin stock</a>
                 </div>
             </Link>
         )

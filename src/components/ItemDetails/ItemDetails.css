@@ -4,7 +4,7 @@
     margin-left: 15%;
     height: 600px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .itemDetails img {
@@ -16,16 +16,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 50%;
+    width: 30%;
 }
 
 .itemDetailsSeleccion {
     display: flex;
-    width: 50%;
+    width: 70%;
     justify-content: space-between;
     border-radius: 0.5rem;
     align-items: center;
-    border: 1px black solid;
+    border: 2px #8080804f solid;
 }
 
 .itemDetailsSeleccion > div {
@@ -36,6 +36,11 @@
 
 .itemDetailsSeleccion > div select {
     width: 45%;
+}
+
+.itemDetailsButtons {
+    display: flex;
+    margin-top: 20px;
 }
 
 .agregarCarrito {

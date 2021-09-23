@@ -1,0 +1,11 @@
+.categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: inherit;
+    width: 50%;
+    margin-right: 10%;
+    font-weight: bold;
+
+}
