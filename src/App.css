@@ -5,11 +5,11 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif; 
 }
 
 .header {
-  background-color: #11B5E4 ;
+  background-color: #52A8A0;
   color: white;
   padding: 1rem;
   box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.5);
@@ -32,6 +32,17 @@ body {
 .header nav a {
   color: white;
   text-decoration: none;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  color: inherit;
+  width: 50%;
+  margin-right: 10%;
+  font-weight: bold;
 }
 
 .cartWidget {

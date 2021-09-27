@@ -5,98 +5,152 @@
             "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70009045.jpg",
             "titulo": "Samsung Galaxy A72",
             "precio": 74999,
-            "stock": 12
+            "stock": 12,
+            "categoryId": 0
         },
         {
             "id": 1,
-            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009046.jpg",
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70009049.jpg",
             "titulo": "Samsung Galaxy A52 128GB",
             "precio": 57999,
-            "stock": 15
+            "stock": 15,
+            "categoryId": 0
         },
         {
             "id": 2,
-            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009054.jpg",
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70009054.jpg",
             "titulo": "Samsung Galaxy A02 32GB",
             "precio": 21999,
-            "stock": 0
+            "stock": 0,
+            "categoryId": 0
         },
         {
             "id": 3,
-            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009233.jpg",
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008891.jpg",
             "titulo": "Samsung Galaxy A12 128GB",
             "precio": 34999,
-            "stock": 15
+            "stock": 15,
+            "categoryId": 0
         },
         {
             "id": 4,
             "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70009231.jpg",
             "titulo": "Samsung Galaxy A22",
             "precio": 41999,
-            "stock": 35
+            "stock": 35,
+            "categoryId": 0
         },
         {
             "id": 5,
             "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008896.jpg",
             "titulo": "Samsung Galaxy A02s",
             "precio": 26999,
-            "stock": 25
+            "stock": 25,
+            "categoryId": 0
         },
         {
             "id": 6,
             "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008890.jpg",
             "titulo": "Samsung Galaxy A21s 128GB",
             "precio": 35999,
-            "stock": 18
+            "stock": 18,
+            "categoryId": 0
         },
         {
             "id": 7,
             "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008379.jpg",
             "titulo": "Samsung Galaxy A31 128GB",
             "precio": 39999,
-            "stock": 36
+            "stock": 36,
+            "categoryId": 0
         },
         {
             "id": 8,
             "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70009272.jpg",
             "titulo": "Samsung Galaxy S20 FE",
             "precio": 84999,
-            "stock": 58
+            "stock": 58,
+            "categoryId": 0
         },
         {
             "id": 9,
-            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008379.jpg",
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008529.jpg",
             "titulo": "Samsung Galaxy A01 Core",
             "precio": 15999,
-            "stock": 153
+            "stock": 153,
+            "categoryId": 0
         },
         {
             "id": 10,
             "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70009053.jpg",
             "titulo": "Samsung Galaxy A32",
             "precio": 44999,
-            "stock": 124
+            "stock": 124,
+            "categoryId": 0
         },
         {
             "id": 11,
             "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008897.jpg",
             "titulo": "Samsung Galaxy S21 Ultra",
             "precio": 174999,
-            "stock": 36
+            "stock": 36,
+            "categoryId": 0
         },
         {
             "id": 12,
             "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008899.jpg",
             "titulo": "Samsung Galaxy S21 Plus",
             "precio": 139999,
-            "stock": 58
+            "stock": 58,
+            "categoryId": 0
         },
         {
             "id": 13,
             "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008885.jpg",
             "titulo": "Samsung Galaxy S21",
             "precio": 121999,
-            "stock": 76
+            "stock": 76,
+            "categoryId": 0
+        },
+        {
+            "id": 14,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008635.jpg",
+            "titulo": "Iphone 12 mini",
+            "precio": 189999,
+            "stock": 32,
+            "categoryId": 2
+        },
+        {
+            "id": 15,
+            "imagen": "https://http2.mlstatic.com/D_NQ_NP_941671-MLA46545254213_062021-O.webp",
+            "titulo": "Iphone XR 64GB",
+            "precio": 152000,
+            "stock": 9,
+            "categoryId": 2
+        },
+        {
+            "id": 16,
+            "imagen": "https://http2.mlstatic.com/D_NQ_NP_615454-MLA46088610337_052021-O.webp",
+            "titulo": "Iphone 12 Pro Max",
+            "precio": 320000,
+            "stock": 14,
+            "categoryId": 2
+        },
+        {
+            "id": 17,
+            "imagen": "https://http2.mlstatic.com/D_NQ_NP_865946-MLA32647234326_102019-O.webp",
+            "titulo": "Iphone 11 Pro",
+            "precio": 250000,
+            "stock": 16,
+            "categoryId": 2
+        },
+        {
+            "id": 18,
+            "imagen": "https://http2.mlstatic.com/D_NQ_NP_906278-MLA31003080152_062019-O.webp",
+            "titulo": "Iphone 7 Plus",
+            "precio": 85000,
+            "stock": 16,
+            "categoryId": 2
         }
     ],
     "categories": [
@@ -111,6 +165,32 @@
         {
             "id": 2,
             "name": "Apple"
+        }
+    ],
+    "lanzamientos": [
+        {
+            "id": 0,
+            "title": "Moto G60s",
+            "precio": 56999,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70009273.jpg"
+        },
+        {
+            "id": 1,
+            "title": "Iphone 12 Mini",
+            "precio": 189999,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008635.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Samsung A22",
+            "precio": 41999,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70009231.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Moto edge 20 pro",
+            "precio": 99999,
+            "imagen": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70009248.jpg"
         }
     ]
 }

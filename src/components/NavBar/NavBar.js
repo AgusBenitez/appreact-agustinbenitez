@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Categories from "../Categories/Categories";
 import CartWidget from "./CartWidget";
 
 const navBar = () => {
@@ -13,11 +12,15 @@ const navBar = () => {
                     </Link>
                 </a>
                 <div>
-                    <Categories />
+                    <ul className="categories">
+                        <li><Link>Samsung</Link></li>
+                        <li><Link>Motorola</Link></li>
+                        <li><Link>Apple</Link></li>
+                    </ul>
                     <CartWidget />
                 </div>
             </nav>
-        </header>
+        </header >
     )
 }
 

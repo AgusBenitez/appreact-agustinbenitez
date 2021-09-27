@@ -2,6 +2,7 @@
     width: 20%;
     height: 500px;
     border: 1px #8080804f solid;
+    border-radius: 2rem;
     text-decoration: none;
     color: black;
 }

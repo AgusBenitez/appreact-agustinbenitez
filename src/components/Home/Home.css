@@ -1,0 +1,97 @@
+.home {
+    width: 70%;
+    margin-left: 15%;
+    justify-content: center;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 1.3fr 1.3fr 1.3fr;
+    grid-template-areas: 
+        "banner banner banner"
+        "cat cont1 cont1"
+        "cat cont2 cont2"
+        "cat cont3 cont3"
+        ;
+}
+
+.homeBanner {
+    grid-area: banner;
+    background-image: linear-gradient(to bottom right, #52A8A0, #6ddfd3);
+    box-shadow: 6px 6px 2rem gray;
+    /* background-color: #6ddfd3; */    
+    text-align: center;
+    padding: 3rem;
+    border-radius: 2rem;
+    color: white;
+}
+
+.homeContainerCat {
+    grid-area: cat;
+    box-shadow: 6px 6px 2rem gray;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.homeContainerCat div p {
+    padding: 3rem;
+    text-align: center;
+    color: black;    
+}
+
+.homeContainer1 {
+    grid-area: cont1;
+    box-shadow: 6px 6px 2rem gray;
+    border-radius: 2rem;
+    background: url("https://img.global.news.samsung.com/ar/wp-content/uploads/2021/06/Samsung-Galaxy-S21-Ultra-5G.jpeg");
+    background-size: cover; 
+}
+
+.homeContainer2 {
+    grid-area: cont2;
+    box-shadow: 6px 6px 2rem gray;
+    border-radius: 2rem;
+    background-image: url("https://www.macworld.es/cmsdata/slideshow/3679834/rebajas-ofertas-iphone-apple.jpg");
+    background-size: cover;    
+}
+
+.homeContainer3 {
+    grid-area: cont3;
+    box-shadow: 6px 6px 2rem gray;
+    border-radius: 2rem;
+    background-image: url("https://motorolauy.vtexassets.com/assets/vtex.file-manager-graphql/images/209febd5-21a8-4fa1-8a25-8d9b8d8c353c___43a27363d26971b6d77d617eed46ce3a.jpg");
+    background-size: 150%;
+}
+
+.prueba {    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80%;
+}
+.miniCard {
+    padding: 0.5rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.miniCard img {
+    width: 75%;
+}
+
+.miniCard h3 {
+    color: black;
+}
+
+
+/* #52A8A0 */
