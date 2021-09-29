@@ -60,7 +60,13 @@ const ItemDetails = () => {
                             cantidad={cantidad}
                         />
                     </div>
-                    <ItemDetailsButtons />
+                    <ItemDetailsButtons
+                        titulo={producto.titulo}
+                        imagen={producto.imagen}
+                        precio={producto.precio}
+                        cantidad={cantidad}
+                        id={producto.id}
+                    />
                 </div>
             </aside>
         </div >

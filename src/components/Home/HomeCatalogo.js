@@ -15,7 +15,7 @@ const HomeCatalogo = () => {
     return (
         <Link to="/productos" className="homeContainerCat">
             <h2>Catálogo</h2>
-            <div className="prueba">
+            <div className="homeContainerCatCards">
                 {data?.map(lanzamiento => {
                     return (
                         <MiniCard

@@ -19,8 +19,7 @@
 .homeBanner {
     grid-area: banner;
     background-image: linear-gradient(to bottom right, #52A8A0, #6ddfd3);
-    box-shadow: 6px 6px 2rem gray;
-    /* background-color: #6ddfd3; */    
+    box-shadow: 6px 6px 2rem gray;   
     text-align: center;
     padding: 3rem;
     border-radius: 2rem;
@@ -69,7 +68,7 @@
     background-size: 150%;
 }
 
-.prueba {    
+.homeContainerCatCards {    
     display: flex;
     justify-content: space-around;
     align-items: center;

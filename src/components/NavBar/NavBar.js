@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
 
-const navBar = () => {
+const NavBar = () => {
 
     return (
         <header className="header">
@@ -13,9 +13,9 @@ const navBar = () => {
                 </a>
                 <div>
                     <ul className="categories">
-                        <li><Link>Samsung</Link></li>
-                        <li><Link>Motorola</Link></li>
-                        <li><Link>Apple</Link></li>
+                        <li>Samsung</li>
+                        <li>Motorola</li>
+                        <li>Apple</li>
                     </ul>
                     <CartWidget />
                 </div>
@@ -24,7 +24,7 @@ const navBar = () => {
     )
 }
 
-export default navBar
+export default NavBar
 
 
 
