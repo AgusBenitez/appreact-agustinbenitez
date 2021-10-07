@@ -11,6 +11,7 @@ const ItemDetails = () => {
     const [cantidad, setCantidad] = useState(1);
 
     useEffect(() => {
+
         fetch(`http://localhost:3001/productos/${id}`)
             .then((response) => response.json())
             .then((data) => setProducto(data))

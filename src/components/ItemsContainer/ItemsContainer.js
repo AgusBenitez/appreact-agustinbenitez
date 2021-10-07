@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useState } from 'react/cjs/react.development';
 import ItemsContainerCard from '../Card/ItemsContainerCard';
 import "./ItemsContainer.css";
+import { getFirestore } from "../../firebase/index.js";
 
 const ItemsContainer = () => {
 
@@ -11,18 +12,38 @@ const ItemsContainer = () => {
 
     useEffect(() => {
 
+        const db = getFirestore();
+        const productsCollection = db.collection("productos");
+
         setLoading(true);
-        fetch("http://localhost:3001/productos")
-            .then((Response) => {
-                if (Response.ok) {
-                    return Response.json();
+
+        productsCollection
+            .get()
+            .then((querySnapshot) => {
+                console.log(querySnapshot);
+                if (querySnapshot.empty) {
+                    console.log("No hay productos");
                 } else {
-                    throw Response;
+                    setData(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
                 }
             })
-            .then((data) => setData(data))
             .catch((error) => setError(error))
             .finally(() => setLoading(false));
+
+
+
+        // fetch("http://localhost:3001/productos")
+        //     .then((Response) => {
+        //         if (Response.ok) {
+        //             return Response.json();
+        //         } else {
+        //             throw Response;
+        //         }
+        //     })
+        //     .then((data) => setData(data))
+        //     .catch((error) => setError(error))
+
+        //     .finally(() => setLoading(false));
     }, [])
 
     return (
