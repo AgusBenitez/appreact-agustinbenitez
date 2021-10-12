@@ -79,3 +79,12 @@
     color: white;
     border-radius: 2rem;
 }
+
+.cargandoText {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    animation-duration: 1s;
+    animation-name: cargando;
+    animation-iteration-count: infinite;  
+}

@@ -1,15 +1,33 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import { getFirestore } from '../../firebase';
 import MiniCard from './MiniCard';
 
 const HomeCatalogo = () => {
 
     const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch("http://localhost:3001/lanzamientos")
-            .then((Response) => Response.json())
-            .then((data) => setData(data))
+        const db = getFirestore();
+        const lanzamientosCollection = db.collection("lanzamientos");
+
+        setLoading(true);
+
+        lanzamientosCollection
+            .get()
+            .then((querySnapshot) => {
+                console.log(querySnapshot);
+                if (querySnapshot.empty) {
+                    console.log("No hay productos");
+                } else {
+                    setData(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+                }
+            })
+            .catch((error) => setError(error))
+            .finally(() => setLoading(false));
+
     }, [])
 
     return (

@@ -29,21 +29,6 @@ const ItemsContainer = () => {
             })
             .catch((error) => setError(error))
             .finally(() => setLoading(false));
-
-
-
-        // fetch("http://localhost:3001/productos")
-        //     .then((Response) => {
-        //         if (Response.ok) {
-        //             return Response.json();
-        //         } else {
-        //             throw Response;
-        //         }
-        //     })
-        //     .then((data) => setData(data))
-        //     .catch((error) => setError(error))
-
-        //     .finally(() => setLoading(false));
     }, [])
 
     return (

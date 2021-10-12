@@ -3,21 +3,45 @@ import { useParams } from 'react-router';
 import './ItemDetails.css';
 import ItemCount from '../Counter/ItemCount';
 import ItemDetailsButtons from './ItemDetailsButtons';
+import { getFirestore } from "../../firebase";
 
 const ItemDetails = () => {
 
     const [producto, setProducto] = useState({});
     const { id } = useParams();
+    const [loading, setLoading] = useState(false);
     const [cantidad, setCantidad] = useState(1);
 
     useEffect(() => {
+        setLoading(true);
+        // Apuntamos a la base de datos.
+        const db = getFirestore();
+        // Apuntamos a una colección.
+        const productsCollection = db.collection("productos");
+        // Apuntamos a un elemento en específico.
+        const product = productsCollection.doc(id);
 
-        fetch(`http://localhost:3001/productos/${id}`)
-            .then((response) => response.json())
-            .then((data) => setProducto(data))
+        product
+            .get()
+            .then((doc) => {
+                if (!doc.exists) {
+                    console.log("El producto no existe");
+                } else {
+                    setProducto({ id: doc.id, ...doc.data() });
+                }
+            })
             .catch((error) => console.log(error))
-
+            .finally(() => setLoading(false));
     }, [id])
+
+    // useEffect(() => {
+
+    //     fetch(`http://localhost:3001/productos/${id}`)
+    //         .then((response) => response.json())
+    //         .then((data) => setProducto(data))
+    //         .catch((error) => console.log(error))
+
+    // }, [id])
 
     const sumarCantidad = (e) => {
         e.preventDefault();
@@ -35,7 +59,9 @@ const ItemDetails = () => {
         }
     }
 
-    return (
+    if (loading) {
+        return <p className="cargandoText">Cargando...</p>
+    } else return (
         <div className='itemDetails'>
             <img src={producto.imagen} />
             <aside>
