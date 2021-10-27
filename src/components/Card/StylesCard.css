@@ -1,10 +1,12 @@
 .itemsContainerCard {
     width: 20%;
+    min-width: 200px;
     height: 500px;
     border: 1px #8080804f solid;
     border-radius: 2rem;
     text-decoration: none;
     color: black;
+    box-shadow: none;
 }
 
 .itemsContainerCard > div {
@@ -22,6 +24,7 @@
 
 .itemsContainerCard:hover {
     box-shadow: 2px 2px rgba(128, 128, 128, 0.5);
+    transition: all 0.5s;
 }
 
 

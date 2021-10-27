@@ -4,6 +4,7 @@ import './ItemDetails.css';
 import ItemCount from '../Counter/ItemCount';
 import ItemDetailsButtons from './ItemDetailsButtons';
 import { getFirestore } from "../../firebase";
+import Features from './Features';
 
 const ItemDetails = () => {
 
@@ -14,11 +15,8 @@ const ItemDetails = () => {
 
     useEffect(() => {
         setLoading(true);
-        // Apuntamos a la base de datos.
         const db = getFirestore();
-        // Apuntamos a una colección.
         const productsCollection = db.collection("productos");
-        // Apuntamos a un elemento en específico.
         const product = productsCollection.doc(id);
 
         product
@@ -33,15 +31,6 @@ const ItemDetails = () => {
             .catch((error) => console.log(error))
             .finally(() => setLoading(false));
     }, [id])
-
-    // useEffect(() => {
-
-    //     fetch(`http://localhost:3001/productos/${id}`)
-    //         .then((response) => response.json())
-    //         .then((data) => setProducto(data))
-    //         .catch((error) => console.log(error))
-
-    // }, [id])
 
     const sumarCantidad = (e) => {
         e.preventDefault();
@@ -63,23 +52,25 @@ const ItemDetails = () => {
         return <p className="cargandoText">Cargando...</p>
     } else return (
         <div className='itemDetails'>
-            <img src={producto.imagen} />
+            <img src={producto.imagen} alt="Imágen del producto" />
             <aside>
                 <div className="itemDetailsStart">
                     <h2>{producto.titulo}</h2>
                     <span>Stock disponible: {producto.stock}</span>
                     <p>{`$${producto.precio}`}</p>
                 </div>
+                <Features
+                    rom={producto.rom}
+                    ram={producto.ram}
+                    display={producto.display}
+                    procesador={producto.procesador}
+                    camprincipal={producto.camprincipal}
+                    camsecundaria={producto.camsecundaria}
+                    peso={producto.peso}
+                />
                 <div className="itemDetailsEnd">
                     <div className="itemDetailsSeleccion">
-                        <div>
-                            <span>Color:</span>
-                            <select name='color'>
-                                <option value='Negro'>Negro</option>
-                                <option value='Blanco'>Blanco</option>
-                                <option value='Rojo'>Rojo</option>
-                            </select>
-                        </div>
+                        <p>Cantidad:</p>
                         <ItemCount
                             stock={producto.stock}
                             sumarCantidad={sumarCantidad}

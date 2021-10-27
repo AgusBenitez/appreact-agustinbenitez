@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './StylesCount.css';
 
 const ItemCount = (props) => {
 
-    if (props.stock != 0) {
+    if (props.stock !== 0) {
         return (
             <div className="countSection">
                 <a className="btnCount" onClick={props.restarCantidad} href="#">-</a>

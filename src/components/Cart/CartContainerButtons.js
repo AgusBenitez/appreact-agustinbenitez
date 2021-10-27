@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
 
 
@@ -13,7 +14,7 @@ const CartContainerButtons = () => {
 
     return (
         <div className="cartContainerButtons">
-            <a className="cartContainerButtonsFinalizar" href="#">Finalizar compra</a>
+            <Link to='/checkout' className="cartContainerButtonsFinalizar">Finalizar compra</Link>
             <a onClick={vaciarCarrito} className="cartContainerButtonsVaciar" href="#">Vaciar</a>
         </div>
     )

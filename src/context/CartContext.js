@@ -19,7 +19,6 @@ export const CartProvider = ({ children }) => {
         const borrarItem = cart.find(item => item.id === id);
         const index = cart.indexOf(borrarItem);
         cart.splice(index, 1);
-        console.log(cart)
     }
 
     const clear = () => {

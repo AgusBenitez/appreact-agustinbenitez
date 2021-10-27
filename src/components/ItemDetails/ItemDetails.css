@@ -4,6 +4,7 @@
     margin-left: 15%;
     height: 600px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -11,6 +12,7 @@
 .itemDetails img {
     width: 25%;
     height: 75%;
+    min-width: 320px;
 }
 
 .itemDetails aside {
@@ -19,6 +21,7 @@
     justify-content: space-around;
     width: 30%;    
     height: 100%;
+    min-width: 255px;
 }
 
 .itemDetailsStart {
@@ -38,16 +41,10 @@
 .itemDetailsSeleccion {
     display: flex;
     width: 70%;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 0.5rem;
     align-items: center;
     border: 2px #8080804f solid;
-}
-
-.itemDetailsSeleccion > div {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
 }
 
 .itemDetailsSeleccion > div select {
@@ -56,6 +53,7 @@
 
 .itemDetailsButtons {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
@@ -68,6 +66,7 @@
     color: white;
     border-radius: 2rem;
     margin-right: 1rem;
+    min-width: 160px;
 } 
 
 .volverBtn {
@@ -87,4 +86,8 @@
     animation-duration: 1s;
     animation-name: cargando;
     animation-iteration-count: infinite;  
+}
+
+.caracteristicas {
+    list-style: none;
 }

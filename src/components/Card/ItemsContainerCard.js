@@ -5,11 +5,11 @@ import './StylesCard.css'
 
 const ItemsContainerCard = (props) => {
 
-    if (props.stock != 0) {
+    if (props.stock !== 0) {
         return (
             <Link to={`/itemdetails/${props.productoId}`} className="itemsContainerCard">
                 <div>
-                    <img className="itemsContainerCardImg" src={props.imagen} />
+                    <img className="itemsContainerCardImg" src={props.imagen} alt="Imágen de producto" />
                     <div >
                         <h4>{props.titulo}</h4>
                         <span>{`$${props.precio}`}</span>
@@ -22,7 +22,7 @@ const ItemsContainerCard = (props) => {
         return (
             <Link to={`/itemdetails/${props.productoId}`} className="itemsContainerCard">
                 <div>
-                    <img className="itemsContainerCardImg" src={props.imagen} />
+                    <img className="itemsContainerCardImg" src={props.imagen} alt="Imágen de producto" />
                     <div>
                         <h4>{props.titulo}</h4>
                         <span>{`$${props.precio}`}</span>

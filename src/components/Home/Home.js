@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import HomeBanner from './HomeBanner';
@@ -11,17 +11,17 @@ const Home = () => {
         <div className="home">
             <HomeBanner />
             <HomeCatalogo />
-            <Link to="/categorias" className="homeContainer1">
+            <Link to="/samsung" className="homeContainer1">
                 <div>
 
                 </div>
             </Link>
-            <Link to="/categorias" className="homeContainer2">
+            <Link to="/apple" className="homeContainer2">
                 <div>
 
                 </div>
             </Link>
-            <Link to="/categorias" className="homeContainer3">
+            <Link to="/motorola" className="homeContainer3">
                 <div>
 
                 </div>

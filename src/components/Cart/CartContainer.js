@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useCart } from '../../context/CartContext';
 import CartItem from './CartItem';
 import './Cart.css';
@@ -9,7 +9,7 @@ const CartContainer = () => {
 
     const { cart } = useCart();
 
-    if (cart.length != 0) {
+    if (cart.length !== 0) {
         return (
             <div className="cartContainer">
                 <h2>Tus productos:</h2>

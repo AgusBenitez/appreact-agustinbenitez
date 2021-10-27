@@ -13,9 +13,9 @@ const NavBar = () => {
                 </a>
                 <div>
                     <ul className="categories">
-                        <li>Samsung</li>
-                        <li>Motorola</li>
-                        <li>Apple</li>
+                        <Link to='/samsung'><li>Samsung</li></Link>
+                        <Link to='/motorola'><li>Motorola</li></Link>
+                        <Link to='/apple'><li>Apple</li></Link>
                     </ul>
                     <CartWidget />
                 </div>
